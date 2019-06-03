@@ -31,5 +31,12 @@ def self.genres
   @@genres.uniq
 end
 
+def self.genre_count
+  genres_count = {}
+  @@genres.each do |genre|
+    genres_count[genre] ||= @@genres.count(genre)
+  end
+  genres_count
 
+end
 end
