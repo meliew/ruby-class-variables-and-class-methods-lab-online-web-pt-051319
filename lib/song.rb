@@ -39,4 +39,13 @@ def self.genre_count
   genres_count
 
 end
+
+def self.artist_count
+  artists_count = {}
+  @@artists.each do |artist|
+    artists_count[artist] ||= @@artists.count(artist)
+  end
+  artists_count
+
+end
 end
