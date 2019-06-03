@@ -21,7 +21,6 @@ def self.count
   @@count
 end
 
-ary.uniq{|x| x.user_id}
 
 def self.artists
   @@artists.uniq
